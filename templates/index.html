@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bing &amp; Flop — A Colorful Adventure</title>
+  <meta name="description" content="Meet Bing the teal bunny and his best friend Flop in a bright, colorful one-page celebration of friendship and big feelings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero__media" aria-hidden="true">
+      <img src="{{ url_for('static', filename='images/hero-bing.png') }}" alt="" width="1920" height="1080">
+    </div>
+    <div class="hero__wash" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__brand">Bing</p>
+      <h1 class="hero__headline">Big feelings. Bigger adventures.</h1>
+      <p class="hero__lede">A bright little world of hops, hugs, and best-friend moments with Flop.</p>
+      <div class="hero__actions">
+        <a class="btn btn--sun" href="#meet-bing">Meet Bing</a>
+        <a class="btn btn--coral" href="#meet-flop">Meet Flop</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section meet-bing" id="meet-bing">
+      <div class="section__inner">
+        <p class="section__label reveal">The little bunny</p>
+        <h2 class="section__title reveal">
+          Say hello to <span class="color-teal">Bing</span>
+        </h2>
+        <p class="section__copy reveal">
+          Bing is a curious teal bunny who tumble-turns through every day — sticky fingers, sunny ideas, and all.
+        </p>
+
+        <div class="meet-grid">
+          <figure class="portrait portrait--bing reveal">
+            <img src="{{ url_for('static', filename='images/bing-portrait.png') }}" alt="Bing, a cheerful teal cartoon bunny in a yellow onesie" width="800" height="800">
+          </figure>
+          <div class="meet-text reveal">
+            <h3>
+              <span class="color-yellow">Curious.</span>
+              <span class="color-teal"> Brave.</span>
+              <span class="color-coral"> Soft-hearted.</span>
+            </h3>
+            <p>
+              Whether he is hopping after a butterfly or learning that sharing is hard,
+              Bing feels everything at full volume — and that is what makes him wonderful.
+            </p>
+            <ul class="trait-list">
+              <li>Loves messy, colourful playtime</li>
+              <li>Asks a million sunny questions</li>
+              <li>Hugs Flop when big feelings arrive</li>
+              <li>Turns ordinary days into adventures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section meet-flop" id="meet-flop">
+      <div class="section__inner">
+        <p class="section__label reveal">The best friend</p>
+        <h2 class="section__title reveal">
+          And here is <span class="color-coral">Flop</span>
+        </h2>
+        <p class="section__copy reveal">
+          Flop is Bing’s calm, cuddly guide — always nearby with a gentle word, a tissue, or a giggle.
+        </p>
+
+        <div class="meet-grid">
+          <figure class="portrait portrait--flop reveal">
+            <img src="{{ url_for('static', filename='images/flop-portrait.png') }}" alt="Flop, a warm orange fluffy cartoon rabbit with a kind smile" width="800" height="800">
+          </figure>
+          <div class="meet-text reveal">
+            <h3>
+              <span class="color-coral">Patient.</span>
+              <span class="color-pink"> Warm.</span>
+              <span class="color-sky"> Wise.</span>
+            </h3>
+            <p>
+              Flop never rushes Bing. He listens, he laughs, and he helps little problems feel
+              a little smaller — one hop at a time.
+            </p>
+            <ul class="trait-list">
+              <li>Gives the cosiest cuddles</li>
+              <li>Knows just what to say</li>
+              <li>Cheers every tiny triumph</li>
+              <li>Makes every day feel safe</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="friends" id="friends">
+      <div class="friends__media">
+        <img src="{{ url_for('static', filename='images/friends-together.png') }}" alt="Bing and Flop holding hands and laughing in a bright flower garden" width="1920" height="1080">
+      </div>
+      <div class="friends__panel">
+        <div class="section__inner reveal">
+          <p class="section__label" style="color: var(--sun-yellow);">Friendship forever</p>
+          <h2 class="section__title">
+            Side by side, <span style="color: var(--white);">always</span>
+          </h2>
+          <p class="section__copy">
+            From garden giggles to rainy-day snuggles, Bing and Flop show that the best adventures
+            are the ones you share — especially when feelings get big.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section adventures" id="adventures">
+      <div class="section__inner">
+        <p class="section__label reveal">Colourful days</p>
+        <h2 class="section__title reveal">
+          <span class="color-sky">Hop.</span>
+          <span class="color-yellow"> Play.</span>
+          <span class="color-pink"> Cuddle.</span>
+          <span class="color-grass"> Repeat.</span>
+        </h2>
+        <p class="section__copy reveal">
+          A splash of playground energy, a soft corner for storytime, and endless reasons to smile.
+        </p>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide">
+            <img src="{{ url_for('static', filename='images/adventure.png') }}" alt="Bing hopping through a bright colourful playground" width="1200" height="900">
+            <figcaption class="gallery__caption">Playground zoomies!</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="{{ url_for('static', filename='images/cozy-time.png') }}" alt="Bing and Flop reading a picture book together on rainbow cushions" width="1200" height="900">
+            <figcaption class="gallery__caption">Cosy storytime</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="{{ url_for('static', filename='images/friends-together.png') }}" alt="Bing and Flop together in a sunny garden full of flowers" width="1920" height="1080">
+            <figcaption class="gallery__caption">Garden giggles</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="more">
+      <h2 class="closing__title reveal">
+        Ready for <span class="color-teal">one</span>
+        <span class="color-coral"> more</span>
+        <span class="color-sky"> hop?</span>
+      </h2>
+      <p class="closing__copy reveal">
+        Scroll back up and say hi to Bing and Flop again — they love visitors.
+      </p>
+      <a class="btn btn--coral reveal" href="#top">Back to Bing</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with colourful love for <strong>Bing</strong> &amp; <strong>Flop</strong> fans · {{ environment }}</p>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll(".reveal, .gallery__item");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+    );
+    revealEls.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
