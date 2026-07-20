@@ -42,7 +42,7 @@ def hello():
 <body>
   <main>
     <h1>Hello, World!</h1>
-    <p>Welcome to bootstrap-test.</p>
+    <p>Welcome to bootstrap-test — deployed automatically from GitHub.</p>
     <span class="env">{ENVIRONMENT}</span>
   </main>
 </body>
