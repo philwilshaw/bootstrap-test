@@ -1,0 +1,22 @@
+substitutions:
+  _SERVICE_NAME: bootstrap-test
+  _ENVIRONMENT: prod
+  _REGION: europe-west1
+
+steps:
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - ${_SERVICE_NAME}
+      - --source
+      - .
+      - --region
+      - ${_REGION}
+      - --allow-unauthenticated
+      - --update-env-vars
+      - ENVIRONMENT=${_ENVIRONMENT}
+
+options:
+  logging: CLOUD_LOGGING_ONLY
